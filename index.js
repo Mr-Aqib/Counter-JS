@@ -9,8 +9,10 @@ btns.forEach((items)=>
         if(items.innerHTML==='Decrease')
         {
             number --
+          
             if(number<0)
             {
+                
                 counter.innerHTML=number
                 counter.style.color='red'
             }
