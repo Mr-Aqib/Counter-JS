@@ -9,17 +9,32 @@ btns.forEach((items)=>
         if(items.innerHTML==='Decrease')
         {
             number --
-            counter.innerHTML=number
+            if(number<0)
+            {
+                counter.innerHTML=number
+                counter.style.color='red'
+            }
+            else
+            {
+             
+                
+                counter.innerHTML=number
+            }
+           
+          
         }
         else  if(items.innerHTML==='Reset')
         {
             number=0
             counter.innerHTML=number
+            counter.style.color='yellow'
         }
         else
         {
             number++
+            
             counter.innerHTML=number
+            counter.style.color='blue'
         }
     })
 })
